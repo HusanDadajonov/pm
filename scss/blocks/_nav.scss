@@ -1,0 +1,87 @@
+.nav {
+    padding: 10px 0;
+
+    &__item:not(:last-child){
+        margin-right: 60px;
+    }
+
+    &__link {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: $color-primary;
+        @include hover-active;
+
+        &:hover.nav__link-drop::after{
+            color: #2fd3fc;
+        }
+
+        &:active.nav__link-drop::after{
+            color: #43c8e9;
+        }
+    }
+
+    &__link-drop::after{
+        content: "\f282";
+        border: none;
+        font-family: bootstrap-icons !important;
+        font-size: 15px;
+        color: $color-primary;
+        transform: translateY(5px);
+        transition: color 0.4s ease;
+    }
+
+    &__close{
+        display: none;
+        align-items: center;
+        justify-content: center;
+        font-size: 34px;
+        border: none;
+        background: none;
+        height: 33px;
+        margin-left: auto;
+        color: #fff;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width:992px){
+    .nav{
+        position:fixed;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        width: 250px;
+        height: 100%;
+        background: #949292;
+        transform: translateX(-100%);
+        transition: transform 0.4s ease;
+    }
+    
+    .show-nav{
+        transform: translateX(0);
+    }
+
+    .nav__link{
+        font-size: 24px;
+        color: #fff;
+    }
+
+    .nav__close{
+        display: flex;
+    }
+    .nav__list{
+        flex-direction: column;
+    }
+    .nav__item:not(:last-child){
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .nav__link-drop::after{
+        font-size: 17px;
+        color: #fff;
+    }
+    .nav__container{
+        align-items: center !important;
+    }
+}

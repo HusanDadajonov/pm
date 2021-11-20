@@ -1,0 +1,66 @@
+.services {
+    padding-bottom: 150px;
+
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(4,300px);
+        grid-template-rows: repeat(2,auto);
+        grid-row-gap: 80px;
+        grid-column-gap:30px;
+        padding-bottom: 200px;
+    }
+
+    &__top-title {
+        @include top-title;
+    }
+
+    &__title {
+        @include about-title;
+        margin: 0 auto 110px auto;
+    }
+    
+    &__card {
+        max-width: 300px;
+        background: #fff;
+        border-radius: 0;
+        border: none;
+        padding: 20px !important;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+
+        &:nth-child(1){
+            height: 330px;
+            transform: translateY(100px);
+        }
+
+        &:last-child{
+            transform: translateY(100px);
+        }
+
+        &:nth-child(2){
+            transform: translateY(40px);
+        }
+
+        &:nth-child(4){
+            height: 338px;
+            transform: translateY(178px);
+        }
+
+        &:nth-child(5){
+            height: 358px;
+        }
+
+        &:nth-child(6){
+            height: 325px;
+            transform: translateY(26px);
+        }
+
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(7),
+        &:nth-child(8){
+            height: 416px;
+        }
+    }
+}

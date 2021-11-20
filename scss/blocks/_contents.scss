@@ -1,0 +1,162 @@
+.contents {
+    padding: 40px 0;
+
+    &__title {
+        width: 114%;
+        font-weight: bold;
+        font-size: 88px;
+        line-height: 117px;
+        color: $color-primary;
+        margin-bottom: 40px;
+    }
+
+    &__title span{
+        background:  linear-gradient(180deg, rgba(231, 245, 255, 0.5) 0%, #c0e4ff );
+        background-size: 100% 28px;
+        background-repeat: no-repeat;
+        background-position: left bottom 15px;
+    }
+
+    &__desc {
+        @include contents-desc;
+        @include d-flex;
+        
+    }
+    &__desc--before{
+        margin-bottom: 40px;
+    }
+
+    &__desc--before::before{
+        content: "";
+        display: inline-block;
+        width: 80px;
+        height: 1px;
+        background:#000;
+        margin-right: 10px;
+    }
+
+    &__btn {
+        margin-bottom: 40px;
+    }
+
+    &__desc--info{
+        @include contents-desc;
+        max-width: 172px;
+    }
+
+    &__item{
+        padding-left: 72px;
+        position: relative;
+
+        &:not(:last-child){
+            margin-right: 60px;
+        }
+
+        &::before{
+            content: "";
+            position:absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-70%);
+            width: 52px;
+            height: 52px;
+            background-size: 52px 52px;
+            background-repeat: no-repeat;
+        }
+        &:nth-child(2)::before{
+            background-image: url("../../img/garintia.svg");
+        }
+        &:nth-child(1)::before{
+            background-image: url("../../img/gps.svg");
+        }
+    }
+
+    &__img-box {
+        position: relative;
+        width: 100%;
+        padding-bottom: 117%;
+    }
+
+    &__img{
+        position:absolute;
+        right: -40px;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width:1200px){
+    .contents__title{
+        width: 93%;
+        font-size: 70px;
+        line-height: 80px;
+    }
+
+    .contents__desc--info{
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width:1100px){
+    .contents__title{
+        font-size: 64px;
+        line-height: 70px;
+    }
+
+    .contents__desc--info{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:992px){
+    .contents__img{
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .contents__title{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:576px){
+    .contents__list{
+        flex-direction: column;
+    }
+    .contents__item{
+        width: 100%;
+    }
+    .contents__item:not(:last-child){
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+
+@media screen and (max-width:490px){
+   .contents__title{
+       font-size: 50px;
+       line-height: 60px;
+   } 
+}
+
+@media screen and (max-width:390px){
+    .contents__title{
+        font-size: 45px;
+        line-height: 50px;
+    } 
+ }
+
+ @media screen and (max-width:350px){
+    .contents__title{
+        font-size: 33px;
+        line-height: 40px;
+    }
+    
+    .contents__title span{
+        background-size: 100% 10px;
+        background-position: left bottom 4px;
+    }
+ }

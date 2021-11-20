@@ -1,0 +1,28 @@
+.only-btn{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform:capitalize;
+    line-height: 24px;
+    color: $only-btn-color;
+    background: $only-btn-bg;
+    border: 2px solid transparent;
+    padding: 6px 20px;
+    transition: background 0.4s ease;
+    text-decoration: none;
+
+    &:hover{
+        background: #2fd3fc;
+        color: #fff;
+    }
+
+    &:focus{
+        box-shadow: none;
+    }
+
+    &:active{
+        background: #43c8e9;
+    }
+}
