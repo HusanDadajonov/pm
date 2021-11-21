@@ -63,4 +63,12 @@
             height: 416px;
         }
     }
+
+    &__accardion{
+        display: none;
+    }
+}
+
+.show-accardion{
+    display: block;
 }

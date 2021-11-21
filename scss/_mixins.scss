@@ -74,3 +74,14 @@
   text-align: center;
   color: $color-primary;
 }
+
+
+@mixin slider-btn {
+  font-size: 25px;
+  color: $color-primary;
+  transition: color 0.4s ease;
+
+  &:hover{
+    color: #9d9b9d;
+  }
+}
