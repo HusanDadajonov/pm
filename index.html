@@ -14,61 +14,64 @@
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
+  <span class="body__bg"></span>
   <section class="hero">
     <header class="hero__header header">
       <div class="header__container   position-relative container">
         <div class="header__flex d-flex align-items-center justify-content-between">
           <a class="header__img-link" href="index.html">
-            <img class="header__img" src="img/РМ.svg" alt="logo-svg">
+            <img class="header__img" src="img/PM.svg" alt="logo-svg">
           </a>
-          <div class="header__block d-flex align-items-center">
-            <a class="header__btn only-btn" href="tel:+9989711234567">Заказать</a>
-            <div class="header__tell-box d-flex align-items-end flex-column">
-              <a class="header__tel text-decoration-none" href="tel:+9989711234567">71 123 45 67</a>
-              <span class="header__tell-label">Обратни званок</span>
+          <div class="d-flex align-items-end flex-column">
+            <div class="header__top-btn-box">
+              <a class="header__top-btn header__top-btn--reviews" href="#">Отзывы</a>
+              <a class="header__top-btn header__top-btn--delivery" href="#">Доставка</a>
             </div>
+            <nav class="hero__nav nav">
+              <div class="nav__container d-flex align-items-center container">
+                <div class="nav__block">
+                  <div class="nav__menu align-items-center">
+                    <span class="nav__menu-span">Меню</span>
+                    <button class="nav__menu-btn d-flex align-items-center justify-content-center">
+                      <img src="img/nav_btn.svg" alt="nav-btn">
+                    </button>
+                  </div>
+                  <ul class="nav__list list-unstyled d-flex align-items-center m-0">
+                    <li class="nav__item">
+                      <a class="nav__link text-decoration-none" href="#">О Нас</a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__link text-decoration-none" href="#">Услуги</a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__link text-decoration-none" href="#">Портфолию</a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__link text-decoration-none" href="#">Протцесс</a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__link text-decoration-none" href="#">Контакты</a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="header__btn only-btn" href="tel:+909953399">Заказать</a>
+                    </li>
+                  </ul>
+                </div>
+                <a class="nav__link nav__link--tel" href="tel:+909953399">+90 995 33 99</a>
+              </div>
+            </nav>
           </div>
-          <div class="header__btns-box align-items-center">
-            <button class="header__btns header__shop-btn"><i class="bi bi-cart3"></i></button>
-            <button class="header__btns header__burger-btn"><i class="bi bi-text-right"></i></button>
-          </div>
+          <button class="header__burger-btn align-items-center justify-content-center">
+            <img src="img/burger-btn.svg" alt="burger-btn">
+          </button>
         </div>
       </div>
-      <nav class="hero__nav nav">
-        <button class="nav__close"><i class="bi bi-x"></i></button>
-        <div class="nav__container d-flex flex-column align-items-end container">
-          <ul class="nav__list list-unstyled d-flex align-items-center m-0">
-            <li class="nav__item">
-              <a class="nav__link text-decoration-none" href="#">О Нас</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link text-decoration-none" href="#">Услуги</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link text-decoration-none" href="#">Портфолию</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link text-decoration-none" href="#">Стоимость</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link text-decoration-none" href="#">Контакты</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link nav__link-drop text-decoration-none dropdown-toggle" href="#" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Рус</a>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">Aнглийский</a></li>
-                <li><a class="dropdown-item" href="#">Узбекский</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </nav>
     </header>
     <div class="hero__contents contents">
       <div class="contents__container container">
-        <div class="contents__row row align-items-center">
-          <div class="contents__col col-xl-6 col-lg-6 col-sm-12 p-0">
-            <h2 class="contents__title"><span>Реставрация</span><br><span>и перетяжка</span> <span>мебели.</span></h2>
+        <div class="contents__row row">
+          <div class="contents__col col-6 p-0">
+            <h2 class="contents__title">Реставрация и перетяжка мебели.</h2>
             <p class="contents__desc contents__desc--before">погрузка и доставка в мастерскую бесплатно</p>
             <a class="contents__btn only-btn" href="#">Заказать</a>
             <ul class="contents__list list-unstyled d-flex align-center-item">
@@ -80,9 +83,9 @@
               </li>
             </ul>
           </div>
-          <div class="contents__col col-xl-6 col-lg-6 col-sm-12 p-0">
+          <div class="contents__col col-6 p-0">
             <div class="contents__img-box">
-              <img class="contents__img" src="img/table.png" alt="table-img">
+              <img class="contents__img" src="img/contents-img.png" alt="table-img">
             </div>
           </div>
         </div>
@@ -92,19 +95,16 @@
   <main>
     <section class="about">
       <div class="about__container container">
-        <h3 class="about__top-title">о нас</h3>
-        <h2 class="about__title">Предлагаем все виды работ<br>по восстановлению и ремонту мебели</h2>
         <div class="about__row row">
-          <div class="about__col col-xl-6 col-lg-6 col-sm-12 p-0">
+          <div class="about__block">
+            <h3 class="about__top-title">о нас</h3>
             <h4 class="about__small-title">Почему мы это используем?</h4>
-            <p class="about__desc">Давно установлено, что читатель будет отвлекаться на удобочитаемое содержимое страницы, глядя на ее макет. </p>
-            <p class="about__desc about__desc--margin">Смысл использования Lorem Ipsum в том, что он имеет более или менее нормальное распределение букв, в отличие от использования </p>
-            <p class="about__desc">«Контент здесь, контент здесь», что делает его похожим на читаемый английский. Многие настольные издательские пакеты и редакторы веб-о запросу «lorem i</p>
-            <a class="about__btn btn" href="#">ПОДРОБНЫЙ</a>
-          </div>
-          <div class="about__col col-xl-6 col-lg-6 col-sm-12 p-0">
-            <div class="about__img-box">
-              <img class="about__img" src="img/about-table.jpg" alt="table">
+            <div class="about__texts">
+              <p class="about__desc about__desc--show1 about__desc--margin"></p>
+              <p class="about__desc about__desc--show2"></p>
+              <p class="about__desc about__desc--remove about__desc--margin">Ценность нашего будущего — хранить традиции старого. Наша Компания долгое время работает на рынке Тошкент город.Опыт наших мастеров в сфере услуг по ремонту и реставрации мебели более 10 лет.</p>
+              <p class="about__desc about__desc--remove">Мы оказываем следующие услуги: ремонт мебели, реставрация мебели,обивка мебели,перетяжка мебели...</p>
+              <button class="about__btn btn" href="#">Подробный</button>
             </div>
           </div>
         </div>
@@ -113,95 +113,104 @@
     <section class="services">
       <div class="services__container container">
         <h3 class="services__top-title">Услуги</h3>
-        <h2 class="about__title">Предлагаем все виды работ<br>по восстановлению и ремонту мебели</h2>
-        <ul class="services__list list-unstyled">
-          <li class="services__card card p-0">
-            <div class="card__bg">
-              <h2 class="card__title fw-bold"><span>Реставрация</span><br><span>мебели</span></h2>
-            </div>
-          </li>
-          <li class="services__card card p-0">
-            <div class="card__bg">
-              <h2 class="card__title fw-bold"><span>Реставрация</span><br><span>деревяккой мебели</span></h2>
-            </div>
-          </li>
-          <li class="services__card card p-0">
-            <div class="card__bg">
-              <h2 class="card__title fw-bold"><span>Реставрация</span><br><span>антиквариата</span></h2>
-            </div>
-          </li>
-          <li class="services__card card p-0">
-            <div class="card__bg">
-              <h2 class="card__title fw-bold"><span>Переклейка</span><br><span>шпона</span></h2>
-            </div>
-          </li>
-          <li class="services__card card p-0">
-            <div class="card__bg">
-              <h2 class="card__title fw-bold"><span>Перетяжка</span><br><span>мебели</span></h2>
-            </div>
-          </li>
-          <li class="services__card card p-0">
-            <div class="card__bg">
-              <h2 class="card__title fw-bold"><span>Изготовленте</span><br><span>матрасов</span></h2>
-            </div>
-          </li>
-          <li class="services__card card p-0">
-            <div class="card__bg">
-              <h2 class="card__title fw-bold"><span>Реставрация</span><br><span>стульев</span></h2>
-            </div>
-          </li>
-          <li class="services__card card p-0">
-            <div class="card__bg">
-              <h2 class="card__title fw-bold"><span>Перетяжка кресел</span><br><span>и диванов</span></h2>
-            </div>
-          </li>
-        </ul>
-        <button class="card__btn btn">ПОДРОБНЫЙ</button>
-        <div class="services__accardion">
-          <ul class="services__list list-unstyled">
-            <li class="services__card card p-0">
-              <div class="card__bg">
-                <h2 class="card__title fw-bold"><span>Реставрация</span><br><span>мебели</span></h2>
-              </div>
-            </li>
-            <li class="services__card card p-0">
-              <div class="card__bg">
-                <h2 class="card__title fw-bold"><span>Реставрация</span><br><span>деревяккой мебели</span></h2>
-              </div>
-            </li>
-            <li class="services__card card p-0">
-              <div class="card__bg">
-                <h2 class="card__title fw-bold"><span>Реставрация</span><br><span>антиквариата</span></h2>
-              </div>
-            </li>
-            <li class="services__card card p-0">
-              <div class="card__bg">
-                <h2 class="card__title fw-bold"><span>Переклейка</span><br><span>шпона</span></h2>
-              </div>
-            </li>
-            <li class="services__card card p-0">
-              <div class="card__bg">
-                <h2 class="card__title fw-bold"><span>Перетяжка</span><br><span>мебели</span></h2>
-              </div>
-            </li>
-            <li class="services__card card p-0">
-              <div class="card__bg">
-                <h2 class="card__title fw-bold"><span>Изготовленте</span><br><span>матрасов</span></h2>
-              </div>
-            </li>
-            <li class="services__card card p-0">
-              <div class="card__bg">
-                <h2 class="card__title fw-bold"><span>Реставрация</span><br><span>стульев</span></h2>
-              </div>
-            </li>
-            <li class="services__card card p-0">
-              <div class="card__bg">
-                <h2 class="card__title fw-bold"><span>Перетяжка кресел</span><br><span>и диванов</span></h2>
-              </div>
-            </li>
-          </ul>
-          <button class="card__btn-close btn">закрыть</button>
+        <h2 class="services__title">Предлагаем все виды работ<br>по восстановлению и ремонту мебели</h2>
+        <div>
+            <ul class="services__list list-unstyled">
+              <li class="services__card card p-0">
+                <div class="card__bg">
+                  <h2 class="card__title fw-bold"><span>Реставрация</span><br><span>мебели</span></h2>
+                </div>
+                <img class="services__img services__img--right" src="img/table1.png" alt="table-img">
+              </li>
+              <li class="services__card card p-0">
+                <div class="card__bg">
+                  <h2 class="card__title fw-bold"><span>Реставрация</span><br><span>деревяккой мебели</span></h2>
+                </div>
+                <img class="services__img" src="img/table2.jpg" alt="table-img">
+              </li>
+              <li class="services__card card p-0">
+                <div class="card__bg">
+                  <h2 class="card__title fw-bold"><span>Реставрация</span><br><span>антиквариата</span></h2>
+                </div>
+                <img class="services__img" src="img/table3.jpg" alt="table-img">
+              </li>
+              <li class="services__card card p-0">
+                <div class="card__bg">
+                  <h2 class="card__title fw-bold"><span>Переклейка</span><br><span>шпона</span></h2>
+                </div>
+                <img class="services__img" src="img/table4.jpg" alt="table-img">
+              </li>
+              <li class="services__card card p-0">
+                <div class="card__bg">
+                  <h2 class="card__title fw-bold"><span>Перетяжка</span><br><span>мебели</span></h2>
+                </div>
+                <img class="services__img" src="img/table5.jpg" alt="table-img">
+              </li>
+              <li class="services__card card p-0">
+                <div class="card__bg">
+                  <h2 class="card__title fw-bold"><span>Изготовленте</span><br><span>матрасов</span></h2>
+                </div>
+                <img class="services__img" src="img/table6.jpg" alt="table-img">
+              </li>
+              <li class="services__card card p-0">
+                <div class="card__bg">
+                  <h2 class="card__title fw-bold"><span>Реставрация</span><br><span>стульев</span></h2>
+                </div>
+                <img class="services__img" src="img/table7.png" alt="table-img">
+              </li>
+              <li class="services__card card p-0">
+                <div class="card__bg">
+                  <h2 class="card__title fw-bold"><span>Перетяжка кресел</span><br><span>и диванов</span></h2>
+                </div>
+                <img class="services__img" src="img/table8.jpg" alt="table-img">
+              </li>
+            </ul>
+            <ul class="services__list  services__list--acardion acardion list-unstyled">
+              <li class="services__card acardion__item card p-0">
+                <div class="card__bg">
+                  <h2 class="card__title fw-bold"><span>Реставрация</span><br><span>мебели</span></h2>
+                </div>
+                <img class="services__img" src="img/table9.jpg" alt="table-img">
+              </li>
+              <li class="services__card acardion__item card p-0">
+                <div class="card__bg">
+                  <h2 class="card__title fw-bold"><span>Реставрация</span><br><span>деревяккой мебели</span></h2>
+                </div>
+                <img class="services__img" src="img/table10.png" alt="table-img">
+              </li>
+              <li class="services__card acardion__item card p-0">
+                <div class="card__bg">
+                  <h2 class="card__title fw-bold"><span>Реставрация</span><br><span>антиквариата</span></h2>
+                </div>
+                <img class="services__img" src="img/table11.jpg" alt="table-img">
+              </li>
+              <li class="services__card acardion__item card p-0">
+                <div class="card__bg">
+                  <h2 class="card__title fw-bold"><span>Переклейка</span><br><span>шпона</span></h2>
+                </div>
+                <img class="services__img" src="img/table12.jpg" alt="table-img">
+              </li>
+              <li class="services__card acardion__item card p-0">
+                <div class="card__bg">
+                  <h2 class="card__title fw-bold"><span>Перетяжка</span><br><span>мебели</span></h2>
+                </div>
+                <img class="services__img" src="img/table13.jpg" alt="table-img">
+              </li>
+              <li class="services__card acardion__item card p-0">
+                <div class="card__bg">
+                  <h2 class="card__title fw-bold"><span>Изготовленте</span><br><span>матрасов</span></h2>
+                </div>
+                <img class="services__img" src="img/table14.jpg" alt="table-img">
+              </li>
+              <li class="services__card acardion__item card p-0">
+                <div class="card__bg">
+                  <h2 class="card__title fw-bold"><span>Реставрация</span><br><span>стульев</span></h2>
+                </div>
+                <img class="services__img" src="img/table15.jpg" alt="table-img">
+              </li>
+            </ul>
         </div>
+        <button class="card__btn btn">ПОДРОБНЫЙ</button>
       </div>
     </section>
     <section class="working position-relative">
@@ -217,7 +226,7 @@
                     <p class="working__desc">До</p>
                   </div>
                   <div class="working__img-box">
-                    <img class="working__img" src="img/working-table1.jpg" alt="working-table">
+                    <img class="working__img" src="img/before.jpg" alt="working-table">
                   </div>
                 </div>
                 <div class="working__col">
@@ -225,7 +234,7 @@
                     <p class="working__desc">После</p>
                   </div>
                   <div class="working__img-box">
-                    <img class="working__img d-block ms-auto" src="img/working-table2.jpg" alt="working-table">
+                    <img class="working__img d-block ms-auto" src="img/after.jpg" alt="working-table">
                   </div>
                 </div>
               </div>
@@ -237,7 +246,7 @@
                     <p class="working__desc">До</p>
                   </div>
                   <div class="working__img-box">
-                    <img class="working__img" src="img/working-table1.jpg" alt="working-table">
+                    <img class="working__img" src="img/before.jpg" alt="working-table">
                   </div>
                 </div>
                 <div class="working__col">
@@ -245,7 +254,7 @@
                     <p class="working__desc">После</p>
                   </div>
                   <div class="working__img-box">
-                    <img class="working__img d-block ms-auto" src="img/working-table2.jpg" alt="working-table">
+                    <img class="working__img d-block ms-auto" src="img/after.jpg" alt="working-table">
                   </div>
                 </div>
               </div>
@@ -257,7 +266,7 @@
                     <p class="working__desc">До</p>
                   </div>
                   <div class="working__img-box">
-                    <img class="working__img" src="img/working-table1.jpg" alt="working-table">
+                    <img class="working__img" src="img/before.jpg" alt="working-table">
                   </div>
                 </div>
                 <div class="working__col">
@@ -265,7 +274,7 @@
                     <p class="working__desc">После</p>
                   </div>
                   <div class="working__img-box">
-                    <img class="working__img d-block ms-auto" src="img/working-table2.jpg" alt="working-table">
+                    <img class="working__img d-block ms-auto" src="img/after.jpg" alt="working-table">
                   </div>
                 </div>
               </div>
@@ -277,7 +286,7 @@
                     <p class="working__desc">До</p>
                   </div>
                   <div class="working__img-box">
-                    <img class="working__img" src="img/working-table1.jpg" alt="working-table">
+                    <img class="working__img" src="img/before.jpg" alt="working-table">
                   </div>
                 </div>
                 <div class="working__col">
@@ -285,7 +294,7 @@
                     <p class="working__desc">После</p>
                   </div>
                   <div class="working__img-box">
-                    <img class="working__img d-block ms-auto" src="img/working-table2.jpg" alt="working-table">
+                    <img class="working__img d-block ms-auto" src="img/after.jpg" alt="working-table">
                   </div>
                 </div>
               </div>
@@ -297,7 +306,7 @@
                     <p class="working__desc">До</p>
                   </div>
                   <div class="working__img-box">
-                    <img class="working__img" src="img/working-table1.jpg" alt="working-table">
+                    <img class="working__img" src="img/before.jpg" alt="working-table">
                   </div>
                 </div>
                 <div class="working__col">
@@ -305,22 +314,24 @@
                     <p class="working__desc">После</p>
                   </div>
                   <div class="working__img-box">
-                    <img class="working__img d-block ms-auto" src="img/working-table2.jpg" alt="working-table">
+                    <img class="working__img d-block ms-auto" src="img/after.jpg" alt="working-table">
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="working__btns-box d-flex align-items-center">
-            <button class="working__left-btn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next"><i class="bi bi-arrow-left"></i></button>
-            <div class="working__carousel-indicators carousel-indicators">
-              <button class="working__round-btn  active" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
-              <button class="working__round-btn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button class="working__round-btn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button class="working__round-btn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <button class="working__round-btn working__round-btn--margin" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <div class="d-flex justify-content-center">
+            <div class="working__btns-box d-flex align-items-center">
+              <button class="working__left-btn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev"><i class="bi bi-arrow-left"></i></button>
+              <div class="working__carousel-indicators carousel-indicators">
+                <button class="working__round-btn  active" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+                <button class="working__round-btn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button class="working__round-btn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button class="working__round-btn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button class="working__round-btn working__round-btn--margin" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              </div>
+              <button class="working__right-btn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next"><i class="bi bi-arrow-right"></i></button>
             </div>
-            <button class="working__right-btn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev"><i class="bi bi-arrow-right"></i></button>
           </div>
         </div>
       </div>

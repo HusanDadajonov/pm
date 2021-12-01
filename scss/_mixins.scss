@@ -6,10 +6,16 @@
 
 @mixin title {
   font-weight: 600;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 48px;
   text-align: center;
   color: $btn-color;
+
+
+  @media screen and (max-width:576px){
+    font-size: 13px;
+    line-height: 18px;
+  }
 }
 
 @mixin subtitle {
@@ -23,11 +29,11 @@
 @mixin hover-active{
   transition: all 0.4s ease;
   &:hover{
-    color: #2fd3fc;
+    color: #2fd3fc !important;
   }
 
   &:active{
-    color: #43c8e9;
+    color: #43c8e9 !important;
   }
 }
 
@@ -47,22 +53,26 @@
   font-weight: 600;
   font-size: 30px;
   line-height: 46px;
-  text-align: center;
   text-transform: uppercase;
   color: $color-primary;
   position: relative;
   padding-top: 15px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 
   &::before{
     content: "";
     position:absolute;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     background: #c4c4c4;
     width: 100px;
     height: 2px;
+  }
+
+
+  @media screen and (max-width:576px){
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 

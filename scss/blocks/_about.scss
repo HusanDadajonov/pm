@@ -1,25 +1,30 @@
 .about {
-    padding-bottom: 140px;
+    background-image: url("../../img/about-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
 
-    &__col:nth-child(1){
-        padding-right: 30px !important;
+    &__block{
+        max-width: 680px;
+        max-height: 100%;
+        padding: 50px;
+        background: #fff;
     }
 
     &__top-title {
         @include top-title;
     }
 
-    &__title {
-        @include about-title;
-        margin:  0 auto 80px auto;
-    }
-
     &__small-title {
         font-weight: 600;
-        font-size: 30px;
+        font-size: 28px;
         line-height: 36px;
         color: $color-primary;
         margin-bottom: 20px;
+    }
+
+    &__row{
+        padding: 30px 0;
     }
 
     &__desc {
@@ -30,7 +35,7 @@
     }
 
     &__desc--margin{
-        margin-bottom: 55px;
+        margin-bottom: 17px;
     }
 
     &__btn {
@@ -74,18 +79,80 @@
     .about__small-title{
         font-size: 22px;
     }
+
+    .about{
+        background-size: cover;
+        background-position:center right -40px;
+    }
+
+    .about__block{
+        max-width: 250px;
+        height: 245px;
+        padding: 20px 10px;
+        overflow-y: hidden;
+        position: relative;
+        z-index: 1;
+
+        &::before{
+            content: "";
+            position:absolute;
+            right: 0;
+            top: 50%;
+            transform: translate(-12.7px,-30%);
+            width: 4px;
+            height: 125px;
+            background: #9d9b9d;
+            border-radius: 10px;
+            z-index: -1;
+        }
+    }
+
+    .about__texts{
+        overflow-y: scroll;
+        height: 125px;
+
+        &::-webkit-scrollbar {
+            width: 10px;
+          }
+          
+          &::-webkit-scrollbar-thumb {
+            width: 60px;
+            border-radius: 10px;
+            background:#9d9b9d;
+          }
+    }
+
+    .about__desc--margin{
+        margin-bottom: 20px;
+    }
+
+    .about__top-title{
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 6px;
+
+        &::before{
+            width: 50px;
+        }
+    }
+
+    .about__small-title{
+        font-size: 13px;
+        line-height: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .about__desc{
+        font-size: 11px;
+        line-height: 18px;
+    }
+
+    .about__btn {
+        display: none;
+    }
 }
 
-@media screen and (max-width:450px){
-    .about__title{
-        font-size: 25px;
-        line-height: 30px;
-    }
-    .about__small-title{
-        font-size: 20px;
-        line-height: 24px;
-    }
-}
+
 
 @media screen and (max-width:420px){
     .about__title{
@@ -94,9 +161,20 @@
     }
 }
 
-@media screen and (max-width:380px){
+@media screen and (max-width:500px){
     .about__title{
         font-size: 20px;
         line-height: 25px;
+    }
+
+    .about{
+        background-position: center right -121px;
+    }
+}
+
+@media screen and (max-width:390px){
+
+    .about{
+        background-position: center right -241px;
     }
 }

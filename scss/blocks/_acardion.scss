@@ -1,0 +1,22 @@
+.acardion {
+    
+    padding-bottom: 130px;
+    display: none;
+
+    &__item {
+        &:nth-child(1){
+            transform: translateY(30px);
+        }
+
+        &:nth-child(2){
+            transform: translateY(50px);
+        }
+
+        &:nth-child(3){
+            transform: translateY(80px);
+        }
+        &:nth-child(7){
+            transform: translateY(70px);
+        }
+    }
+}   
