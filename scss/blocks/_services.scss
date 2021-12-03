@@ -94,4 +94,8 @@
     .services{
         padding-top: 40px;
     }
+
+    .services__top-title::before{
+        width: 80px;
+    }
 }

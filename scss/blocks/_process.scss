@@ -1,0 +1,255 @@
+.process {
+
+
+  &__header {
+    text-align: center;
+  }
+
+  &__header-title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #444245;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    padding-top: 15px;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 100px;
+      height: 2px;
+      background-color: #D2D1D2;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__header-text {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 48px;
+    color: #444245;
+    max-width: 600px;
+    margin: 40px auto;
+  }
+
+  &__sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__wrap {
+    width: 437px;
+    height: 551px;
+    border: 11px solid #CAE5FF;
+    padding: 50px;
+    position: relative;
+  }
+
+  &__element {
+    font-size: 28px;
+    line-height: 26px;
+    color: #444245;
+    transform: rotate(-90deg);
+    display: inline-block;
+    position: absolute;
+    top: 120px;
+    left: 50px;
+
+
+    &::before {
+      content: "";
+      width: 60px;
+      height: 2px;
+      background: #444245;
+      position: absolute;
+      top: 11px;
+      right: -70px;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #444245;
+  }
+
+  &__btn {
+    text-align: center;
+    display: block;
+  }
+
+  &__table {
+    width: 630px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__inner {
+    width: 268px;
+  }
+
+  &__text {
+    max-width: 230px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: #444245;
+    margin-bottom: 80px;
+    position: relative;
+  }
+  &__table-element {
+    font-size: 28px;
+    line-height: 26px;
+    color: #444245;
+    transform: rotate(-90deg);
+    display: inline-block;
+    position: absolute;
+    top: 65px;
+    left: -56px;
+
+
+    &::before {
+      content: "";
+      width: 60px;
+      height: 2px;
+      background: #444245;
+      position: absolute;
+      top: 11px;
+      right: -70px;
+    }
+  }
+}
+@media screen and (max-width:1200px) {
+  .process__wrap {
+    width: 310px;
+    height: 520px;
+  }
+  .process__table  {
+    width: 590px;
+  }
+
+  .process__subtitle{
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .process__btn {
+    font-size: 15px;
+    padding: 0 !important;
+  }
+}
+@media screen and (max-width:1027px) {
+  .process__sec {
+    flex-direction: column;
+  }
+  .process__wrap {
+    width: 437px;
+    height: 551px;
+    margin-bottom: 50px;
+  }
+  .process__table  {
+    width: 100%;
+    padding-left: 60px;
+  }
+  .two{
+    margin-bottom: 64px;
+  }
+  .there {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width:640px) {
+  .process {
+
+		&__header-title {
+      font-size: 14px;
+      line-height: 18px;
+		}
+
+		&__header-text {
+      font-size: 13px;
+      line-height: 18px;
+		}
+
+
+		&__wrap {
+      width: 273px;
+      height: 349px;
+		}
+
+		&__element {
+      font-size: 18px;
+      line-height: 18px;
+      top: 120px;
+      left: 30px;
+
+      &::before {
+        width: 40px;
+        height: 1px;
+        top: 11px;
+        right: -50px;
+      }
+		}
+
+		&__subtitle {
+      font-size: 13px;
+      line-height: 18px;
+		}
+
+		&__btn {
+      font-size: 12px;
+      line-height: 14px;
+      padding: 8px 12px !important;
+		}
+
+		&__table {
+      padding-left: 30px;
+		}
+
+
+		&__text {
+      font-size: 11px;
+      line-height: 18px;
+      max-width: 136px;
+		}
+
+		&__table-element {
+      font-size: 13px;
+      line-height: 14px;
+      color: #444245;
+      transform: rotate(-90deg);
+      display: inline-block;
+      position: absolute;
+      top: 50px;
+      left: -25px;
+  
+  
+      &::before {
+        content: "";
+        width: 40px;
+        height: 1px;
+        background: #444245;
+        position: absolute;
+        top: 6px;
+        right: -50px;
+      }
+		}
+  }
+  .there {
+    margin-bottom: 80px;
+  }
+}
+@media screen and(max-width:400px) {
+  .process__text {
+    max-width: 120px;
+  }
+}

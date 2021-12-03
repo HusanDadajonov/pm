@@ -22,6 +22,7 @@ function moreFunc(e){
     elBodyBg.style.opacity = "0.4";
     elBodyBg.style.visibility = "visible";
     elBodyBg.style.zIndex = "400";
+    document.querySelector("body").style.overflowY = "hidden";
 }
 
 function hiddenFunc(e){
@@ -29,6 +30,7 @@ function hiddenFunc(e){
     elBodyBg.style.opacity = "0";
     elBodyBg.style.visibility = "hidden";
     elBodyBg.style.zIndex = "-1";
+    document.querySelector("body").style.overflowY = "scroll";
 }
 
 function showMore(e){
@@ -67,3 +69,50 @@ function showCards(e){
         sum2 = 1;
     }
 }
+
+function range1(){
+    let SliderValue = document.getElementById("slider").value;
+    let  elMyImage = document.getElementById("slider__my-image");
+    elMyImage.style.clipPath = `polygon(0 0, ${SliderValue}% 0, ${SliderValue}% 100%, 0 100%)`;
+    console.log(elMyImage.style.cliath = "polygon(0 0, " + SliderValue + "% 0" + SliderValue + "% 100%, 0 100%)");
+}
+
+function range2(){
+    let SliderValue = document.getElementById("slider2").value;
+    let  elMyImage = document.getElementById("slider__my-image2");
+    elMyImage.style.clipPath = `polygon(0 0, ${SliderValue}% 0, ${SliderValue}% 100%, 0 100%)`;
+    console.log(elMyImage.style.cliath = "polygon(0 0, " + SliderValue + "% 0" + SliderValue + "% 100%, 0 100%)");
+}
+
+function range3(){
+    let SliderValue = document.getElementById("slider3").value;
+    let  elMyImage = document.getElementById("slider__my-image3");
+    elMyImage.style.clipPath = `polygon(0 0, ${SliderValue}% 0, ${SliderValue}% 100%, 0 100%)`;
+    console.log(elMyImage.style.cliath = "polygon(0 0, " + SliderValue + "% 0" + SliderValue + "% 100%, 0 100%)");
+}
+
+
+function range4(){
+    let SliderValue = document.getElementById("slider4").value;
+    let  elMyImage = document.getElementById("slider__my-image4");
+    elMyImage.style.clipPath = `polygon(0 0, ${SliderValue}% 0, ${SliderValue}% 100%, 0 100%)`;
+    console.log(elMyImage.style.cliath = "polygon(0 0, " + SliderValue + "% 0" + SliderValue + "% 100%, 0 100%)");
+}
+
+function range5(){
+    let SliderValue = document.getElementById("slider5").value;
+    let  elMyImage = document.getElementById("slider__my-image5");
+    elMyImage.style.clipPath = `polygon(0 0, ${SliderValue}% 0, ${SliderValue}% 100%, 0 100%)`;
+    console.log(elMyImage.style.cliath = "polygon(0 0, " + SliderValue + "% 0" + SliderValue + "% 100%, 0 100%)");
+}
+
+
+
+
+
+
+
+
+
+
+

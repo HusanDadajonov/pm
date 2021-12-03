@@ -1,0 +1,150 @@
+.contact {
+  margin-top: 150px;
+  margin-bottom: 50px;
+
+  &__sec {
+    display: flex;
+    position: relative;
+  }
+
+
+  &__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #444245;
+    position: relative;
+    margin-top: 50px;
+    padding-top: 15px;
+
+    &::before {
+      content: "";
+      width: 100px;
+      height: 2px;
+      background-color: #d2d1d2;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #444245;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #444245;
+    margin-bottom: 4px;
+    margin-top: 20px;
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 20px;
+    color: #444245;
+    opacity: 0.8;
+    text-decoration: none;
+
+    &:hover {
+      color:#444245;
+    }
+  }
+
+
+  &__map {
+    width: 100%;
+    height: 100%;
+  }
+  &__iframe {
+    width: 100%;
+    height: 500px;
+  }
+}
+@media screen and(max-width:992px) {
+  .contact__wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  .contact__location::before {
+    content: "";
+    background: linear-gradient(90deg, #FFFFFF 20.41%, rgba(255, 255, 255, 0.91497) 42.84%, rgba(255, 255, 255, 0) 100%), url(.png);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width:768px){
+  .contact__map{
+    display: none;
+  }
+
+  .contact__wrap{
+    position:static;
+  }
+
+  .contact__location::before{
+    display: none;
+  }
+
+  .contact{
+    background-image: url("../../img/bg-map.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+
+    &::before{
+        content: "";
+        position:absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, #fff 20.41%, rgba(255, 255, 255, 0.91497) 42.84%, rgba(255, 255, 255, 0) 100%), url(.png);
+    }
+  }
+}
+
+@media screen and(max-width:576px) {
+    .contact{
+      margin-top: 50px;
+    }
+}
+
+@media screen and(max-width:450px) {
+  .contact__title {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 17px;
+
+    &::before {
+      width: 80px;
+    }
+  }
+  .contact__subtitle {
+    font-size: 11px;
+    line-height: 16px;
+  }
+  .contact__text {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .contact__link {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .contact__iframe {
+    height: 350px;
+  }
+}

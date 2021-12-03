@@ -110,6 +110,7 @@
     .about__texts{
         overflow-y: scroll;
         height: 125px;
+        padding-right: 10px;
 
         &::-webkit-scrollbar {
             width: 10px;
@@ -151,6 +152,7 @@
         display: none;
     }
 }
+
 
 
 

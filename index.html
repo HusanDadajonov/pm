@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +10,16 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./slick-1.8.1/slick-1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="./slick-1.8.1/slick-1.8.1/slick/slick-theme.css">
   <link rel="stylesheet" href="css/main.min.css">
 </head>
+
 <body>
   <span class="body__bg"></span>
   <section class="hero">
@@ -24,8 +31,8 @@
           </a>
           <div class="d-flex align-items-end flex-column">
             <div class="header__top-btn-box">
-              <a class="header__top-btn header__top-btn--reviews" href="#">Отзывы</a>
-              <a class="header__top-btn header__top-btn--delivery" href="#">Доставка</a>
+              <a class="header__top-btn header__top-btn--reviews" href="#reviews">Отзывы</a>
+              <a class="header__top-btn header__top-btn--delivery" href="#shipping">Доставка</a>
             </div>
             <nav class="hero__nav nav">
               <div class="nav__container d-flex align-items-center container">
@@ -38,19 +45,19 @@
                   </div>
                   <ul class="nav__list list-unstyled d-flex align-items-center m-0">
                     <li class="nav__item">
-                      <a class="nav__link text-decoration-none" href="#">О Нас</a>
+                      <a class="nav__link text-decoration-none" href="#about">О Нас</a>
                     </li>
                     <li class="nav__item">
-                      <a class="nav__link text-decoration-none" href="#">Услуги</a>
+                      <a class="nav__link text-decoration-none" href="#services">Услуги</a>
                     </li>
                     <li class="nav__item">
-                      <a class="nav__link text-decoration-none" href="#">Портфолию</a>
+                      <a class="nav__link text-decoration-none" href="#working">Портфолию</a>
                     </li>
                     <li class="nav__item">
-                      <a class="nav__link text-decoration-none" href="#">Протцесс</a>
+                      <a class="nav__link text-decoration-none" href="#proces">Протцесс</a>
                     </li>
                     <li class="nav__item">
-                      <a class="nav__link text-decoration-none" href="#">Контакты</a>
+                      <a class="nav__link text-decoration-none" href="#contact">Контакты</a>
                     </li>
                     <li class="nav__item">
                       <a class="header__btn only-btn" href="tel:+909953399">Заказать</a>
@@ -93,7 +100,7 @@
     </div>
   </section>
   <main>
-    <section class="about">
+    <section id="about" class="about">
       <div class="about__container container">
         <div class="about__row row">
           <div class="about__block">
@@ -102,122 +109,225 @@
             <div class="about__texts">
               <p class="about__desc about__desc--show1 about__desc--margin"></p>
               <p class="about__desc about__desc--show2"></p>
-              <p class="about__desc about__desc--remove about__desc--margin">Ценность нашего будущего — хранить традиции старого. Наша Компания долгое время работает на рынке Тошкент город.Опыт наших мастеров в сфере услуг по ремонту и реставрации мебели более 10 лет.</p>
-              <p class="about__desc about__desc--remove">Мы оказываем следующие услуги: ремонт мебели, реставрация мебели,обивка мебели,перетяжка мебели...</p>
+              <p class="about__desc about__desc--remove about__desc--margin">Ценность нашего будущего — хранить традиции
+                старого. Наша Компания долгое время работает на рынке Тошкент город.Опыт наших мастеров в сфере услуг по
+                ремонту и реставрации мебели более 10 лет.</p>
+              <p class="about__desc about__desc--remove">Мы оказываем следующие услуги: ремонт мебели, реставрация
+                мебели,обивка мебели,перетяжка мебели...</p>
               <button class="about__btn btn" href="#">Подробный</button>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="services">
+    <section id="services" class="services">
       <div class="services__container container">
         <h3 class="services__top-title">Услуги</h3>
         <h2 class="services__title">Предлагаем все виды работ<br>по восстановлению и ремонту мебели</h2>
         <div>
-            <ul class="services__list list-unstyled">
-              <li class="services__card card p-0">
-                <div class="card__bg">
-                  <h2 class="card__title fw-bold"><span>Реставрация</span><br><span>мебели</span></h2>
-                </div>
-                <img class="services__img services__img--right" src="img/table1.png" alt="table-img">
-              </li>
-              <li class="services__card card p-0">
-                <div class="card__bg">
-                  <h2 class="card__title fw-bold"><span>Реставрация</span><br><span>деревяккой мебели</span></h2>
-                </div>
-                <img class="services__img" src="img/table2.jpg" alt="table-img">
-              </li>
-              <li class="services__card card p-0">
-                <div class="card__bg">
-                  <h2 class="card__title fw-bold"><span>Реставрация</span><br><span>антиквариата</span></h2>
-                </div>
-                <img class="services__img" src="img/table3.jpg" alt="table-img">
-              </li>
-              <li class="services__card card p-0">
-                <div class="card__bg">
-                  <h2 class="card__title fw-bold"><span>Переклейка</span><br><span>шпона</span></h2>
-                </div>
-                <img class="services__img" src="img/table4.jpg" alt="table-img">
-              </li>
-              <li class="services__card card p-0">
-                <div class="card__bg">
-                  <h2 class="card__title fw-bold"><span>Перетяжка</span><br><span>мебели</span></h2>
-                </div>
-                <img class="services__img" src="img/table5.jpg" alt="table-img">
-              </li>
-              <li class="services__card card p-0">
-                <div class="card__bg">
-                  <h2 class="card__title fw-bold"><span>Изготовленте</span><br><span>матрасов</span></h2>
-                </div>
-                <img class="services__img" src="img/table6.jpg" alt="table-img">
-              </li>
-              <li class="services__card card p-0">
-                <div class="card__bg">
-                  <h2 class="card__title fw-bold"><span>Реставрация</span><br><span>стульев</span></h2>
-                </div>
-                <img class="services__img" src="img/table7.png" alt="table-img">
-              </li>
-              <li class="services__card card p-0">
-                <div class="card__bg">
-                  <h2 class="card__title fw-bold"><span>Перетяжка кресел</span><br><span>и диванов</span></h2>
-                </div>
-                <img class="services__img" src="img/table8.jpg" alt="table-img">
-              </li>
-            </ul>
-            <ul class="services__list  services__list--acardion acardion list-unstyled">
-              <li class="services__card acardion__item card p-0">
-                <div class="card__bg">
-                  <h2 class="card__title fw-bold"><span>Реставрация</span><br><span>мебели</span></h2>
-                </div>
-                <img class="services__img" src="img/table9.jpg" alt="table-img">
-              </li>
-              <li class="services__card acardion__item card p-0">
-                <div class="card__bg">
-                  <h2 class="card__title fw-bold"><span>Реставрация</span><br><span>деревяккой мебели</span></h2>
-                </div>
-                <img class="services__img" src="img/table10.png" alt="table-img">
-              </li>
-              <li class="services__card acardion__item card p-0">
-                <div class="card__bg">
-                  <h2 class="card__title fw-bold"><span>Реставрация</span><br><span>антиквариата</span></h2>
-                </div>
-                <img class="services__img" src="img/table11.jpg" alt="table-img">
-              </li>
-              <li class="services__card acardion__item card p-0">
-                <div class="card__bg">
-                  <h2 class="card__title fw-bold"><span>Переклейка</span><br><span>шпона</span></h2>
-                </div>
-                <img class="services__img" src="img/table12.jpg" alt="table-img">
-              </li>
-              <li class="services__card acardion__item card p-0">
-                <div class="card__bg">
-                  <h2 class="card__title fw-bold"><span>Перетяжка</span><br><span>мебели</span></h2>
-                </div>
-                <img class="services__img" src="img/table13.jpg" alt="table-img">
-              </li>
-              <li class="services__card acardion__item card p-0">
-                <div class="card__bg">
-                  <h2 class="card__title fw-bold"><span>Изготовленте</span><br><span>матрасов</span></h2>
-                </div>
-                <img class="services__img" src="img/table14.jpg" alt="table-img">
-              </li>
-              <li class="services__card acardion__item card p-0">
-                <div class="card__bg">
-                  <h2 class="card__title fw-bold"><span>Реставрация</span><br><span>стульев</span></h2>
-                </div>
-                <img class="services__img" src="img/table15.jpg" alt="table-img">
-              </li>
-            </ul>
+          <ul class="services__list list-unstyled">
+            <li class="services__card card p-0">
+              <div class="card__bg">
+                <h2 class="card__title fw-bold"><span>Реставрация</span><br><span>мебели</span></h2>
+              </div>
+              <img class="services__img services__img--right" src="img/table1.png" alt="table-img">
+            </li>
+            <li class="services__card card p-0">
+              <div class="card__bg">
+                <h2 class="card__title fw-bold"><span>Реставрация</span><br><span>деревяккой мебели</span></h2>
+              </div>
+              <img class="services__img" src="img/table2.jpg" alt="table-img">
+            </li>
+            <li class="services__card card p-0">
+              <div class="card__bg">
+                <h2 class="card__title fw-bold"><span>Реставрация</span><br><span>антиквариата</span></h2>
+              </div>
+              <img class="services__img" src="img/table3.jpg" alt="table-img">
+            </li>
+            <li class="services__card card p-0">
+              <div class="card__bg">
+                <h2 class="card__title fw-bold"><span>Переклейка</span><br><span>шпона</span></h2>
+              </div>
+              <img class="services__img" src="img/table4.jpg" alt="table-img">
+            </li>
+            <li class="services__card card p-0">
+              <div class="card__bg">
+                <h2 class="card__title fw-bold"><span>Перетяжка</span><br><span>мебели</span></h2>
+              </div>
+              <img class="services__img" src="img/table5.jpg" alt="table-img">
+            </li>
+            <li class="services__card card p-0">
+              <div class="card__bg">
+                <h2 class="card__title fw-bold"><span>Изготовленте</span><br><span>матрасов</span></h2>
+              </div>
+              <img class="services__img" src="img/table6.jpg" alt="table-img">
+            </li>
+            <li class="services__card card p-0">
+              <div class="card__bg">
+                <h2 class="card__title fw-bold"><span>Реставрация</span><br><span>стульев</span></h2>
+              </div>
+              <img class="services__img" src="img/table7.png" alt="table-img">
+            </li>
+            <li class="services__card card p-0">
+              <div class="card__bg">
+                <h2 class="card__title fw-bold"><span>Перетяжка кресел</span><br><span>и диванов</span></h2>
+              </div>
+              <img class="services__img" src="img/table8.jpg" alt="table-img">
+            </li>
+          </ul>
+          <ul class="services__list  services__list--acardion acardion list-unstyled">
+            <li class="services__card acardion__item card p-0">
+              <div class="card__bg">
+                <h2 class="card__title fw-bold"><span>Реставрация</span><br><span>мебели</span></h2>
+              </div>
+              <img class="services__img" src="img/table9.jpg" alt="table-img">
+            </li>
+            <li class="services__card acardion__item card p-0">
+              <div class="card__bg">
+                <h2 class="card__title fw-bold"><span>Реставрация</span><br><span>деревяккой мебели</span></h2>
+              </div>
+              <img class="services__img" src="img/table10.png" alt="table-img">
+            </li>
+            <li class="services__card acardion__item card p-0">
+              <div class="card__bg">
+                <h2 class="card__title fw-bold"><span>Реставрация</span><br><span>антиквариата</span></h2>
+              </div>
+              <img class="services__img" src="img/table11.jpg" alt="table-img">
+            </li>
+            <li class="services__card acardion__item card p-0">
+              <div class="card__bg">
+                <h2 class="card__title fw-bold"><span>Переклейка</span><br><span>шпона</span></h2>
+              </div>
+              <img class="services__img" src="img/table12.jpg" alt="table-img">
+            </li>
+            <li class="services__card acardion__item card p-0">
+              <div class="card__bg">
+                <h2 class="card__title fw-bold"><span>Перетяжка</span><br><span>мебели</span></h2>
+              </div>
+              <img class="services__img" src="img/table13.jpg" alt="table-img">
+            </li>
+            <li class="services__card acardion__item card p-0">
+              <div class="card__bg">
+                <h2 class="card__title fw-bold"><span>Изготовленте</span><br><span>матрасов</span></h2>
+              </div>
+              <img class="services__img" src="img/table14.jpg" alt="table-img">
+            </li>
+            <li class="services__card acardion__item card p-0">
+              <div class="card__bg">
+                <h2 class="card__title fw-bold"><span>Реставрация</span><br><span>стульев</span></h2>
+              </div>
+              <img class="services__img" src="img/table15.jpg" alt="table-img">
+            </li>
+          </ul>
         </div>
         <button class="card__btn btn">ПОДРОБНЫЙ</button>
       </div>
     </section>
-    <section class="working position-relative">
+    <section id="working" class="working position-relative">
       <div class="working__container container">
         <h3 class="working__top-title">наши работы</h3>
         <h2 class="working__title">Смотрите, как преображается мебелъ после перетяжки, реставрации и ремонта</h2>
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        
+        <div id="carosuelSmall" class="carousel slide">
+          <div class="carousel-inner slider__inner">
+            <div class="carousel-item slider__item active">
+              <div class="slider d-flex flex-column">
+                <div class="slider__tops-box d-flex align-items-center justify-content-between">
+                  <span class="slider__tops slider__before">До</span>
+                  <span class="slider__tops slider__after">После</span>
+                </div>
+                <div class="d-flex w-100">
+                  <div class="slider__wrapper position-relative">
+                    <input class="slider" type="range" min="3" max="97" id="slider" value="50" oninput="range1()">
+                    <img class="slider__img" src="img/slider-table.jpg" alt="slidee-img">
+                    <img id="slider__my-image" class="slider__img" src="img/slider-table2.jpg" alt="slidee-img">
+                  </div>
+                </div>
+              </div>  
+            </div>
+            <div class="carousel-item slider__item">
+              <div class="slider d-flex flex-column">
+                <div class="slider__tops-box d-flex align-items-center justify-content-between">
+                  <span class="slider__tops slider__before">До</span>
+                  <span class="slider__tops slider__after">После</span>
+                </div>
+                <div class="d-flex w-100">
+                  <div class="slider__wrapper position-relative">
+                    <input class="slider" type="range" min="3" max="97" id="slider2" value="50" oninput="range2()">
+                    <img class="slider__img" src="img/slider-table.jpg" alt="slidee-img">
+                    <img id="slider__my-image2" class="slider__img" src="img/slider-table2.jpg" alt="slidee-img">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item slider__item">
+              <div class="slider d-flex flex-column">
+                <div class="slider__tops-box d-flex align-items-center justify-content-between">
+                  <span class="slider__tops slider__before">До</span>
+                  <span class="slider__tops slider__after">После</span>
+                </div>
+                <div class="d-flex w-100">
+                  <div class="slider__wrapper position-relative">
+                    <input class="slider" type="range" min="3" max="97" id="slider3" value="50" oninput="range3()">
+                    <img class="slider__img" src="img/slider-table.jpg" alt="slidee-img">
+                    <img id="slider__my-image3" class="slider__img" src="img/slider-table2.jpg" alt="slidee-img">
+                  </div>
+                </div>
+              </div> 
+            </div>
+            <div class="carousel-item slider__item">
+              <div class="slider d-flex flex-column">
+                <div class="slider__tops-box d-flex align-items-center justify-content-between">
+                  <span class="slider__tops slider__before">До</span>
+                  <span class="slider__tops slider__after">После</span>
+                </div>
+                <div class="d-flex w-100">
+                  <div class="slider__wrapper position-relative">
+                    <input class="slider" type="range" min="3" max="97" id="slider4" value="50" oninput="range4()">
+                    <img class="slider__img" src="img/slider-table.jpg" alt="slidee-img">
+                    <img id="slider__my-image4" class="slider__img" src="img/slider-table2.jpg" alt="slidee-img">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item slider__item">
+              <div class="slider d-flex flex-column">
+                <div class="slider__tops-box d-flex align-items-center justify-content-between">
+                  <span class="slider__tops slider__before">До</span>
+                  <span class="slider__tops slider__after">После</span>
+                </div>
+                <div class="d-flex w-100">
+                  <div class="slider__wrapper position-relative">
+                    <input class="slider" type="range" min="3" max="97" id="slider5" value="50" oninput="range5()">
+                    <img class="slider__img" src="img/slider-table.jpg" alt="slidee-img">
+                    <img id="slider__my-image5" class="slider__img" src="img/slider-table2.jpg" alt="slidee-img">
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+          <div class="d-flex justify-content-center mb-5 mt-5">
+            <div class="working__btns-box d-flex align-items-center">
+              <button class="working__left-btn" type="button" data-bs-target="#carosuelSmall"
+                data-bs-slide="prev"><i class="bi bi-arrow-left"></i></button>
+              <div class="working__carousel-indicators carousel-indicators">
+                <button class="working__round-btn  active" type="button" data-bs-target="#carosuelSmall"
+                  data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+                <button class="working__round-btn" type="button" data-bs-target="#carosuelSmall"
+                  data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button class="working__round-btn" type="button" data-bs-target="#carosuelSmall"
+                  data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button class="working__round-btn" type="button" data-bs-target="#carosuelSmall"
+                  data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button class="working__round-btn working__round-btn--margin" type="button"
+                  data-bs-target="#carosuelSmall" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              </div>
+              <button class="working__right-btn" type="button" data-bs-target="#carosuelSmall"
+                data-bs-slide="next"><i class="bi bi-arrow-right"></i></button>
+            </div>
+          </div>
+        </div> 
+        <div id="carosuelBig" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="working__row d-flex justify-content-between">
@@ -322,21 +432,400 @@
           </div>
           <div class="d-flex justify-content-center">
             <div class="working__btns-box d-flex align-items-center">
-              <button class="working__left-btn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev"><i class="bi bi-arrow-left"></i></button>
+              <button class="working__left-btn" type="button" data-bs-target="#carosuelBig"
+                data-bs-slide="prev"><i class="bi bi-arrow-left"></i></button>
               <div class="working__carousel-indicators carousel-indicators">
-                <button class="working__round-btn  active" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
-                <button class="working__round-btn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button class="working__round-btn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button class="working__round-btn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button class="working__round-btn working__round-btn--margin" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button class="working__round-btn  active" type="button" data-bs-target="#carosuelBig"
+                  data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+                <button class="working__round-btn" type="button" data-bs-target="#carosuelBig"
+                  data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button class="working__round-btn" type="button" data-bs-target="#carosuelBig"
+                  data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button class="working__round-btn" type="button" data-bs-target="#carosuelBig"
+                  data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button class="working__round-btn working__round-btn--margin" type="button"
+                  data-bs-target="#carosuelBig" data-bs-slide-to="4" aria-label="Slide 5"></button>
               </div>
-              <button class="working__right-btn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next"><i class="bi bi-arrow-right"></i></button>
+              <button class="working__right-btn" type="button" data-bs-target="#carosuelBig"
+                data-bs-slide="next"><i class="bi bi-arrow-right"></i></button>
+            </div>
+          </div>
+        </div> 
+        
+      </div>
+    </section>
+    <section id="reviews" class="reviews">
+      <div class="container">
+        <h3 class="reviews__top--title working__top-title">отзывы</h3>
+        <h2 class="reviews__title working__title">Почему наши клиенты редко покупают новую мебель</h2> 
+        <div id="carosuelSmall2" class="carousel slide">
+          <div class="carousel-inner ">
+            <div class="carousel-item  active">
+              <div class="reviews__contents d-flex">
+                <div class="reviews__col">
+                  <span class="reviews__date">20 Ноябр 2021</span>
+                  <div class="reviews__wrap">
+                    <div class="reviews__img-box d-flex">
+                      <img src="img/reviews-img.jpg" alt="reviews-img">
+                      <img src="img/reviews2.jpg" alt="reviews-img">
+                    </div>
+                    <div class="reviews__texts-box d-flex flex-column mb-5">
+                      <p class="reviews__desc">Сама по себе боль - это любовь, основная система хранения. Ему нравится, он любит футбол,</p>
+                      <p class="reviews__desc"> но это боль и парень. Различные элементы, это сейчас некрасиво, и любовь детей. У кого в постели футболисты, да </p>
+                      <p class="reviews__desc">у той массы иммунной системы. Только для </p>
+                    </div>
+                    <h3 class="reviews__name">Мадина Нуралиева</h3>
+                  </div>
+                </div>
+                <div class="reviews__col">
+                  <span class="reviews__date">27 Ноябр 2021</span>
+                  <div class="reviews__wrap">
+                      <div class="d-flex flex-column">
+                        <p class="reviews__desc mb-4">Сама по себе боль - это любовь, основная система хранения. Ему нравится, он любит футбол,но это боль и парень. Различные элементы, это сейчас некрасиво, и любовь детей.</p>
+                        <p class="reviews__desc">У кого в постели футболисты, да у той массы иммунной системы.Только для </p>
+                        <p class="reviews__desc reviews__desc-mb">массы львовскисейчас некрасиво,Ллюбовь детей. У кого в постелифутболисты, да у</p>
+                      </div>
+                      <h3 class="reviews__name">Мадина Нуралиева</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item slider__item">
+              <div class="reviews__contents d-flex">
+                <div class="reviews__col">
+                  <span class="reviews__date">20 Ноябр 2021</span>
+                  <div class="reviews__wrap">
+                    <div class="reviews__img-box d-flex">
+                      <img src="img/reviews-img.jpg" alt="reviews-img">
+                      <img src="img/reviews2.jpg" alt="reviews-img">
+                    </div>
+                    <div class="reviews__texts-box d-flex flex-column mb-5">
+                      <p class="reviews__desc">Сама по себе боль - это любовь, основная система хранения. Ему нравится, он любит футбол,</p>
+                      <p class="reviews__desc"> но это боль и парень. Различные элементы, это сейчас некрасиво, и любовь детей. У кого в постели футболисты, да </p>
+                      <p class="reviews__desc">у той массы иммунной системы. Только для </p>
+                    </div>
+                    <h3 class="reviews__name">Мадина Нуралиева</h3>
+                  </div>
+                </div>
+                <div class="reviews__col">
+                  <span class="reviews__date">27 Ноябр 2021</span>
+                  <div class="reviews__wrap">
+                      <div class="d-flex flex-column">
+                        <p class="reviews__desc mb-4">Сама по себе боль - это любовь, основная система хранения. Ему нравится, он любит футбол,но это боль и парень. Различные элементы, это сейчас некрасиво, и любовь детей.</p>
+                        <p class="reviews__desc">У кого в постели футболисты, да у той массы иммунной системы.Только для </p>
+                        <p class="reviews__desc reviews__desc-mb">массы львовскисейчас некрасиво,Ллюбовь детей. У кого в постелифутболисты, да у</p>
+                      </div>
+                      <h3 class="reviews__name">Мадина Нуралиева</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="reviews__contents d-flex">
+                <div class="reviews__col">
+                  <span class="reviews__date">20 Ноябр 2021</span>
+                  <div class="reviews__wrap">
+                    <div class="reviews__img-box d-flex">
+                      <img src="img/reviews-img.jpg" alt="reviews-img">
+                      <img src="img/reviews2.jpg" alt="reviews-img">
+                    </div>
+                    <div class="reviews__texts-box d-flex flex-column mb-5">
+                      <p class="reviews__desc">Сама по себе боль - это любовь, основная система хранения. Ему нравится, он любит футбол,</p>
+                      <p class="reviews__desc"> но это боль и парень. Различные элементы, это сейчас некрасиво, и любовь детей. У кого в постели футболисты, да </p>
+                      <p class="reviews__desc">у той массы иммунной системы. Только для </p>
+                    </div>
+                    <h3 class="reviews__name">Мадина Нуралиева</h3>
+                  </div>
+                </div>
+                <div class="reviews__col">
+                  <span class="reviews__date">27 Ноябр 2021</span>
+                  <div class="reviews__wrap">
+                      <div class="d-flex flex-column">
+                        <p class="reviews__desc mb-4">Сама по себе боль - это любовь, основная система хранения. Ему нравится, он любит футбол,но это боль и парень. Различные элементы, это сейчас некрасиво, и любовь детей.</p>
+                        <p class="reviews__desc">У кого в постели футболисты, да у той массы иммунной системы.Только для </p>
+                        <p class="reviews__desc reviews__desc-mb">массы львовскисейчас некрасиво,Ллюбовь детей. У кого в постелифутболисты, да у</p>
+                      </div>
+                      <h3 class="reviews__name">Мадина Нуралиева</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="reviews__contents d-flex">
+                <div class="reviews__col">
+                  <span class="reviews__date">20 Ноябр 2021</span>
+                  <div class="reviews__wrap">
+                    <div class="reviews__img-box d-flex">
+                      <img src="img/reviews-img.jpg" alt="reviews-img">
+                      <img src="img/reviews2.jpg" alt="reviews-img">
+                    </div>
+                    <div class="reviews__texts-box d-flex flex-column mb-5">
+                      <p class="reviews__desc">Сама по себе боль - это любовь, основная система хранения. Ему нравится, он любит футбол,</p>
+                      <p class="reviews__desc"> но это боль и парень. Различные элементы, это сейчас некрасиво, и любовь детей. У кого в постели футболисты, да </p>
+                      <p class="reviews__desc">у той массы иммунной системы. Только для </p>
+                    </div>
+                    <h3 class="reviews__name">Мадина Нуралиева</h3>
+                  </div>
+                </div>
+                <div class="reviews__col">
+                  <span class="reviews__date">27 Ноябр 2021</span>
+                  <div class="reviews__wrap">
+                      <div class="d-flex flex-column">
+                        <p class="reviews__desc mb-4">Сама по себе боль - это любовь, основная система хранения. Ему нравится, он любит футбол,но это боль и парень. Различные элементы, это сейчас некрасиво, и любовь детей.</p>
+                        <p class="reviews__desc">У кого в постели футболисты, да у той массы иммунной системы.Только для </p>
+                        <p class="reviews__desc reviews__desc-mb">массы львовскисейчас некрасиво,Ллюбовь детей. У кого в постелифутболисты, да у</p>
+                      </div>
+                      <h3 class="reviews__name">Мадина Нуралиева</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="reviews__contents d-flex">
+                <div class="reviews__col">
+                  <span class="reviews__date">20 Ноябр 2021</span>
+                  <div class="reviews__wrap">
+                    <div class="reviews__img-box d-flex">
+                      <img src="img/reviews-img.jpg" alt="reviews-img">
+                      <img src="img/reviews2.jpg" alt="reviews-img">
+                    </div>
+                    <div class="reviews__texts-box d-flex flex-column mb-5">
+                      <p class="reviews__desc">Сама по себе боль - это любовь, основная система хранения. Ему нравится, он любит футбол,</p>
+                      <p class="reviews__desc"> но это боль и парень. Различные элементы, это сейчас некрасиво, и любовь детей. У кого в постели футболисты, да </p>
+                      <p class="reviews__desc">у той массы иммунной системы. Только для </p>
+                    </div>
+                    <h3 class="reviews__name">Мадина Нуралиева</h3>
+                  </div>
+                </div>
+                <div class="reviews__col">
+                  <span class="reviews__date">27 Ноябр 2021</span>
+                  <div class="reviews__wrap">
+                      <div class="d-flex flex-column">
+                        <p class="reviews__desc mb-4">Сама по себе боль - это любовь, основная система хранения. Ему нравится, он любит футбол,но это боль и парень. Различные элементы, это сейчас некрасиво, и любовь детей.</p>
+                        <p class="reviews__desc">У кого в постели футболисты, да у той массы иммунной системы.Только для </p>
+                        <p class="reviews__desc reviews__desc-mb">массы львовскисейчас некрасиво,Ллюбовь детей. У кого в постелифутболисты, да у</p>
+                      </div>
+                      <h3 class="reviews__name">Мадина Нуралиева</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center mb-5 mt-5">
+            <div class="working__btns-box d-flex align-items-center">
+              <button class="working__left-btn" type="button" data-bs-target="#carosuelSmall2"
+                data-bs-slide="prev"><i class="bi bi-arrow-left"></i></button>
+              <div class="working__carousel-indicators carousel-indicators">
+                <button class="working__round-btn  active" type="button" data-bs-target="#carosuelSmall2"
+                  data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+                <button class="working__round-btn" type="button" data-bs-target="#carosuelSmall2"
+                  data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button class="working__round-btn" type="button" data-bs-target="#carosuelSmall2"
+                  data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button class="working__round-btn" type="button" data-bs-target="#carosuelSmall2"
+                  data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button class="working__round-btn working__round-btn--margin" type="button"
+                  data-bs-target="#carosuelSmall2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              </div>
+              <button class="working__right-btn" type="button" data-bs-target="#carosuelSmall2"
+                data-bs-slide="next"><i class="bi bi-arrow-right"></i></button>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </section>
+    <section id="proces" class="process">
+      <div class="process__container container">
+        <div class="process__header">
+          <h2 class="process__header-title">ПРОЦЕСС</h2>
+          <p class="process__header-text">Как заказать ремонт, реставрация или
+            перетяхку мебели</p>
+        </div>
+        <div class="process__sec">
+          <div class="process__wrap">
+            <span class="process__element">01.</span>
+            <img src="img/process-img.png" alt="process-img">
+            <h3 class="process__subtitle">Позвоните или подайте 
+              заявку на сайте.</h3>
+            <a class="process__btn btn" href="#">ОСТАВИТЬ ЗАЯВКУ</a>
+          </div>
+          <div class="process__table">
+            <div class="process__inner">
+              <p class="process__text two">
+                <span class="process__table-element">02.</span>
+                Вызовите Мастера или
+                Дизайнера бесплатно
+                в удобное время
+              </p>
+              <p class="process__text there">
+                <span class="process__table-element">03.</span>
+                Подпишите договор
+                и внесите предоплату
+                (20% от суммы).
+              </p>
+              <p class="process__text">
+                <span class="process__table-element">04.</span>
+                Дождитесь звонока
+                  и согласуйте удобное
+                  время обратной доставку.
+              </p>
+            </div>
+            <div class="process__inner">
+              <p class="process__text">
+                <span class="process__table-element">05.</span>
+                Изучите и выберите материал для ремонта
+              </p>
+              <p class="process__text">
+                <span class="process__table-element">06.</span>
+                Перейти мебель грузчику и водителю в удобное вам время.
+              </p>
+              <p class="process__text">
+                <span class="process__table-element">07.</span>
+                Примите заказ, получите 
+                гарантию и наслаждайтесь
+                обновленной мебелью.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <section id="shipping" class="shipping">
+      <div class="shipping__container container">
+        <div class="shipping__sec">
+          <div class="shipping__inner col-xs-12 col-md-6 col-xs-6">
+            <img class="shipping__img" src="img/shipping-img.png" alt="shipping-img">
+          </div>
+          <div class="shipping__wrap col-xs-12 col-md-6 col-xs-6">
+            <h2 class="shipping__title">ДОСТАВКА</h2>
+            <h3 class="shipping__subtitle">Погрузим и отвезем вашу мебель в мастерескую бесплатно</h3>
+            <p class="shipping__text mb-4">Если вы оформили заказ до 14 часов и товар в наличии на складе, то его доставка будет произведена на следующий рабочий день. Интервал доставки с 7 до 23 часов, более точный интервал (3-4 часа) согласовывается при оформлении заказа. Если вы хотите доставку в строго определенный час, удобный вам, то сроки доставки могут быть увеличены.
+            </p>
+            <p class="shipping__text">Заказы, оформленные в субботу и воскресенье, доставляются в понедельник.</p>
+            <a class="shipping__btn btn" href="#">Заказать бесплатную доставку</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <div class="contact__container container">
+        <div class="contact__sec row">
+          <div class="contact__wrap col-sm-12 col-md-12 col-lg-3">
+            <h2 class="contact__title">Контакты</h2>
+            <h3 class="contact__subtitle">Простой способ связаться с нами</h3>
+            <h4 class="contact__text">Телефон</h4>
+            <a class="contact__link" href="tel:+998909953399" >+998-90-995-33-99</a>
+            <h4 class="contact__text">Эл. адрес</h4>
+            <a class="contact__link" href="mailto:sohibsharipov000gmail.com" target="_blank">sohibsharipov000gmail.com</a>
+            <h4 class="contact__text">Адрес</h4>
+            <address class="contact__link">Город Ташкент: улица Чилонзор: 46</address>
+            <h4 class="contact__text">Ежедневно</h4>
+            <p class="contact__link">с 09:00 до 21:00</p>
+          </div>
+          <div class="contact__location col-sm-12 col-md-12 col-lg-9">
+            <div class="contact__map" style="position:relative;overflow:hidden;"><a href="https://yandex.uz/maps/10335/tashkent/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ташкент</a><a href="https://yandex.uz/maps/10335/tashkent/?ll=69.191161%2C41.282197&utm_medium=mapframe&utm_source=maps&z=14.28" style="color:#eee;font-size:12px;position:absolute;top:14px;">Ташкент — Яндекс.Карты</a><iframe class="contact__iframe" src="https://yandex.uz/map-widget/v1/-/CCUujTCODD" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__sec">
+        <div class="footer__wrap">
+          <a class="footer__logo-link" href="index.html">
+            <img src="img/footer-logo.svg" alt="footer-logo">
+          </a>
+          <p class="footer__text">
+            Сама боль - это любовь, главный покупатель Тортор, пока эта уродливая подушка из детишек и уродов. Морби
+            тинцидант
+          </p>
+
+          <ul class="footer__icon-list">
+            <li class="footer__icon-item">
+              <a class="footer__icon-link" href="#" target="_blank">
+                <img class="footer__icon-img" src="img/instagram-logo.png" alt="footer__icon-img">
+              </a>
+            </li>
+            <li class="footer__icon-item">
+              <a class="footer__icon-link" href="#" target="_blank">
+                <img class="footer__icon-img" src="img/telegram-logo.png" alt="footer__icon-img">
+              </a>
+            </li>
+            <li class="footer__icon-item">
+              <a class="footer__icon-link" href="#" target="_blank">
+                <img class="footer__icon-img" src="img/facebook-logo.png" alt="footer__icon-img">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__lists ">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <h3 class="footer__subtitle">МЕНЮ</h3>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Услуги</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Протцесс</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Портфолию</a>
+            </li>
+          </ul>
+          <div class="footer__center-sec">
+            <a class="footer__center-logo" href="index.html">
+              <img class="footer__center-img" src="img/footer-icon2.png" alt="img">
+            </a>
+            <p class="footer__center-text">погрузка и доставка <br>
+              в мастерскую бесплатно</p>
+            <a class="footer__btn" href="#">Заказать</a>
+          </div>
+          <ul class="footer__list footer-leftchild">
+            <li class="footer__item">
+              <h3 class="footer__subtitle">О НАС</h3>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">О компаний</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Отзывы</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Доставка</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Контакты</a>
+            </li>
+          </ul>
+
+        </div>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <h3 class="footer__subtitle">КОНТАКТЫ</h3>
+          </li>
+          <li class="footer__item footer__contact--img">
+            <a class="footer__link" href="#">+998-90-995-33-99</a>
+          </li>
+          <li class="footer__item footer__contact--img">
+            <a class="footer__link" href="#">sohibsharipov000gmail.com</a>
+          </li>
+          <li class="footer__item footer__contact--img">
+            <a class="footer__link" href="#">Город Ташкент: улица Чилонзор: 46</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <span class="span">awd</span>
   <script src="js/main.js"></script>
 </body>
+
 </html>
+
+
+
+
+

@@ -1,0 +1,148 @@
+.shipping {
+  margin-top: 150px;
+  
+
+  &__sec {
+    display: flex;
+    flex-flow: row-reverse;
+    position: relative;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #444245;
+    position: relative;
+    margin-top: 50px;
+    padding-top: 15px;
+
+    &::before {
+      content: "";
+      width: 100px;
+      height: 2px;
+      background-color: #d2d1d2;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__subtitle {
+    max-width: 350px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #444245;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #444245;
+    max-width: 517px;
+  }
+
+  &__btn {
+    margin-top: 36px;
+  }
+
+
+  &__img {
+    max-width: 100%;
+  }
+}
+
+@media screen and(max-width:768px) {
+  .shipping__sec {
+    flex-direction: column;
+  }
+  .shipping__title {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .shipping__subtitle {
+    position: absolute;
+    top: 120px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+  }
+  .shipping__inner {
+    display: flex;
+    margin-top: 270px;
+    margin-bottom: 30px;
+    margin: 270px auto 30px auto;
+  }
+  .shipping__img {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width:1050px){
+    .shipping__btn{
+        font-size: 13px;
+        line-height: 14px;
+        padding: 8px 12px;
+    }
+}
+
+@media screen and (max-width:576px){
+   
+
+    .shipping__wrap{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .shipping__title{
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    .shipping__subtitle{
+      font-size: 13px;
+      line-height: 18px;
+    }
+
+    .shipping__inner {
+      margin-top: 200px;
+    }
+
+    .shipping{
+      margin-top: 0;
+    }
+}
+
+@media screen and (max-width:450px) {
+  .shipping__title {
+    font-size: 14px;
+    line-height: 18px;
+
+    &::before {
+      width: 80px;
+    }
+  }
+  .shipping__subtitle {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .shipping__inner {
+    margin: 180px auto 20px auto;
+  }
+  .shipping__text {
+    font-size: 11px;
+    line-height: 18px;
+  }
+}
